@@ -1,0 +1,3 @@
+[submodule "accounts-storage"]
+	path = accounts-storage
+	url = https://github.com/xinzhang-lotusflare/llat-account
