@@ -1,0 +1,1 @@
+Error: This installer must be run as root. Try 'sudo bash ./wireguard/wireguard-install.sh'

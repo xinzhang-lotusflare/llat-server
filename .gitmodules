@@ -1,3 +1,6 @@
 [submodule "accounts-storage"]
 	path = accounts-storage
 	url = https://github.com/xinzhang-lotusflare/llat-account
+[submodule "wireguard"]
+	path = wireguard
+	url = https://github.com/xinzhang-lotusflare/wireguard-install
