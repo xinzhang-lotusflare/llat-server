@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source env.sh
-source ${LOG_DATE_SH}
+source ${UTIL_SH}
 
 USER_EMAIL_ADDR=$1
 
