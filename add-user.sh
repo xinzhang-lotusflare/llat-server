@@ -16,6 +16,7 @@ create() {
   if [[ -e ${CLIENT_NAME}.conf ]]; then
     rm ${CLIENT_NAME}.conf
   fi
+  # Create WireGuard config
   sudo ${PYTHON} ${WG_PY} add -c ${CLIENT_NAME} -s ${WG_SH}
 
   if [[ ! -e ${CLIENT_NAME}.conf ]]; then
@@ -36,6 +37,7 @@ create() {
 
   # TODO: send email to ${USER_EMAIL_ADDR} with attachment ${CLIENT_NAME}.llat.conf
 
+  # Save new record
   ${PYTHON} ${PERSIST_PY} \
     --operation create \
     --user-email-addr ${USER_EMAIL_ADDR} \
