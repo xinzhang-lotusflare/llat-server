@@ -5,7 +5,6 @@ import sys
 from datetime import date, timedelta
 
 fieldnames = [
-  'id',
   'wg_internal_client_name',
   'wg_peer_ip_addr',
   'created_date',
@@ -24,7 +23,6 @@ def create(user_email_addr: str, client_name: str, peer_addr: str):
         if not file_exists:
           writer.writeheader()
         writer.writerow({
-          'id': "0",
           'wg_internal_client_name': client_name,
           'wg_peer_ip_addr': peer_addr,
           'created_date': today,
